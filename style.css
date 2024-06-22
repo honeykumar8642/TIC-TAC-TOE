@@ -1,4 +1,162 @@
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #283845;
+}
+
+.winning-section {
+  font-size: 7vh;
+  color: white;
+  font-weight: 650;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 12vh;
+  color: white;
+  font-weight: 650;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .components {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vmin;
+  height: 70vh;
+  width: 70vh;
+}
+
+#box {
+  color: #ed701d;
+  background-color: #38a3a5;
+  height: 20vh;
+  width: 20vh;
+  font-size: 12vh;
+  border-radius: 1rem;
+}
+
+.reset-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#reset-btn {
+  padding: 2vh;
+  font-size: 1.45rem;
+  font-weight: 400;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 12px rgba(24, 24, 24, 0.562);
+}
+
+.new-game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vh;
+  font-size: 1.45rem;
+  font-weight: 400;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 12px rgba(24, 24, 24, 0.562);
+}
+
+.win-msg {
+  color: #38a3a5;
+}
+
+.hide {
+  display: none;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 720px) {
+  h1 {
+      font-size: 6vh;
+  }
+  .container .components {
+      height: 40vh;
+      width: 40vh;
+  }
+  #box {
+      height: 13vh;
+      width: 13vh;
+      font-size: 10vh;
+  }
+  #reset-btn,
+  .new-game {
+    margin-top: 2rem;
+      padding: 1.5vh;
+      font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 490px) {
+  h1 {
+      font-size: 4vh;
+      margin-top: 3vh;
+  }
+  .container .components {
+    align-items: center;
+    justify-content: center;
+      height:35vh;
+      width: 50vh;
+  }
+  #box {
+      height: 10vh;
+      width: 13vh;
+      font-size: 8vh;
+  }
+  #reset-btn,
+  .new-game {
+      padding: 1vh;
+      font-size: 1rem;
+  }
+  .win-msg{
+    text-align: center;
+    font-size: 5vh;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+      font-size: 6vh;
+  }
+  .container .components {
+      height: 40vh;
+      width: 40vh;
+  }
+  #box {
+      height: 12vh;
+      width: 12vh;
+      font-size: 6vh;
+  }
+  #reset-btn,
+  .new-game {
+      padding: 0.5vh;
+      font-size: 0.8rem;
+  }
+}
+
+
+
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -76,3 +234,4 @@
   .hide{
       display: none;
   }
+  */
